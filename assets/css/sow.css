@@ -1,0 +1,45 @@
+
+/* Cover (opcional) codigo css practica*/
+.cover{display:grid; place-items:center; min-height:55vh; padding:3rem 1rem; background:#222; color:#fff; text-align:center}
+.title{font-size:clamp(2rem, 4vw, 3.5rem); letter-spacing:.02em; margin:0 0 .5rem; opacity:0; animation:fadeIn 1.2s ease forwards}
+.subtitle{margin:0; color:#eaeaea; opacity:.9}
+@keyframes fadeIn{to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.title{animation:none; opacity:1}}
+
+/* Navegación sticky */
+.site-nav{position:sticky; top:0; z-index:1000; background:#fff; border-top:1px solid var(--shade); border-bottom:1px solid var(--shade)}
+.site-nav ul{margin:0; padding:.5rem 1rem; display:flex; gap:.75rem; flex-wrap:wrap; list-style:none}
+.site-nav a{display:block; padding:.5rem .75rem; text-decoration:none; color:inherit; border-radius:.5rem}
+.site-nav a:hover,.site-nav a:focus{background:var(--shade)}
+
+/* Bloques de sitio */
+.site-block{padding:2.5rem 1rem; border-bottom:1px solid var(--shade)}
+.block-header{display:flex; flex-direction:column; gap:.25rem; margin-bottom:1rem}
+.block-header .meta{color:var(--muted); margin:0}
+
+/* Iframe responsive */
+.iframe-wrap{margin:1rem 0}
+.iframe-wrap iframe{width:100%; aspect-ratio: 16 / 9; border:1px solid var(--shade); background:#fff}
+.iframe-wrap figcaption{font-size:.9rem; color:var(--muted); margin-top:.5rem}
+
+/* Texto en columnas responsivas */
+.analysis-text{columns:1; column-gap:2rem}
+.analysis-text h3{break-inside:avoid; margin-top:1rem}
+.analysis-text p, .analysis-text ul{break-inside:avoid}
+@media (min-width: 900px){ .analysis-text{columns:2} }
+
+/* Galería de capturas */
+.screenshots{display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); margin-top:1rem}
+.screenshots figure{border:1px solid var(--shade); border-radius:.5rem; overflow:hidden; background:#fff}
+.screenshots figcaption{padding:.5rem .75rem; font-size:.9rem; color:var(--muted)}
+
+/* Notas */
+.notes{background:#fff; border-top:1px solid var(--shade); padding:1.5rem; margin:2rem 0; border-bottom:1px solid var(--shade)}
+.notes h2{margin-top:0}
+
+/* Impresión */
+@media print{
+  .site-nav, .cover figcaption { display:none !important }
+  .cover{min-height:auto; color:#000; background:#fff}
+  a[href]:after{content:" (" attr(href) ")"}
+}

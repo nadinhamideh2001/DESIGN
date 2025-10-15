@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Informe de Análisis de Sitios Web Sobresalientes (SOW) – Web Atelier UDIT" />
+  <title>Some Outstanding Webs – Informe SOW</title>
+
+  <!-- CSS base y específico (desde /sow subir un nivel a /assets)codigo html practica -->
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/sow.css" />
 </head>
 <body>
-    
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <section class="cover" aria-label="Portada">
+      <h1 class="title" aria-label="Some Outstanding Webs">Some Outstanding Webs</h1>
+      <p class="subtitle">Análisis de sitios premiados · Web Atelier (UDIT)</p>
+    </section>
+
+    <nav class="site-nav" aria-label="Secciones del informe">
+      <ul>
+        <li><a href="#site-awwwards">Awwwards</a></li>
+        <li><a href="#site-webby">Webby Awards</a></li>
+        <li><a href="#site-fwa">FWA</a></li>
+        <li><a href="#site-cssda">CSS Design Awards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- ====== Sección 1: Awwwards ====== -->
+    <section id="site-awwwards" class="site-block" aria-labelledby="h-awwwards">
+      <header class="block-header">
+        <h2 id="h-awwwards">Awwwards</h2>
+        <p class="meta">URL: <a href="https://www.awwwards.com/" target="_blank" rel="noopener">awwwards.com</a></p>
+      </header>
+
+      <figure class="iframe-wrap">
+        <iframe src="https://www.awwwards.com/" title="Sitio Awwwards" loading="lazy"></iframe>
+        <figcaption>Si el sitio no carga por políticas de seguridad, <a href="https://www.awwwards.com/" target="_blank" rel="noopener">ábrelo en una pestaña nueva</a>.</figcaption>
+      </figure>
+
+      <div class="analysis-text">
+        <h3>Selección</h3>
+        <p>Elegí este sitio porque <em>(motivo)</em>.</p>
+
+        <h3>Impresión inicial</h3>
+        <p><em>(sensaciones)</em></p>
+
+        <h3>Estructura</h3>
+        <ul>
+          <li>Arquitectura de la información: <em>(jerarquía, navegación, IA)</em></li>
+          <li>Patrones de navegación: <em>(menú, búsqueda, filtros)</em></li>
+        </ul>
+
+        <h3>Visual</h3>
+        <ul>
+          <li>Paleta y contraste: <em>(WCAG)</em></li>
+          <li>Tipografía y ritmo: <em>(jerarquías, legibilidad)</em></li>
+          <li>Branding: <em>(consistencia, tono)</em></li>
+        </ul>
+
+        <h3>Interacción</h3>
+        <ul>
+          <li>Animaciones / microinteracciones</li>
+          <li>Scroll/gestos</li>
+        </ul>
+
+        <h3>Usabilidad & Accesibilidad</h3>
+        <ul>
+          <li>Claridad de tareas clave</li>
+          <li>Accesibilidad: foco, alt, semántica, ARIA</li>
+        </ul>
+
+        <h3>Técnico</h3>
+        <ul>
+          <li>Rendimiento: Lighthouse/Core Web Vitals</li>
+          <li>SEO/semántica</li>
+        </ul>
+
+        <h3>Criterios de excelencia</h3>
+        <p><em>(Originalidad, utilidad, UX)</em></p>
+
+        <h3>Conclusión</h3>
+        <p><strong>Puntos fuertes:</strong> … · <strong>Debilidades:</strong> … · <strong>Aprendizajes:</strong> …</p>
+      </div>
+
+      <div class="screenshots">
+        <figure>
+          <img src="../assets/sow/awwwards1.png" alt="Home de Awwwards, hero y navegación" loading="lazy" />
+          <figcaption>Home y navegación principal</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/sow/awwwards2.png" alt="Detalle de tarjeta de proyecto en listado" loading="lazy" />
+          <figcaption>Tarjeta de proyecto</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====== Sección 2: Webby ====== -->
+    <section id="site-webby" class="site-block" aria-labelledby="h-webby">
+      <header class="block-header">
+        <h2 id="h-webby">Webby Awards</h2>
+        <p class="meta">URL: <a href="https://www.webbyawards.com/" target="_blank" rel="noopener">webbyawards.com</a></p>
+      </header>
+
+      <figure class="iframe-wrap">
+        <iframe src="https://www.webbyawards.com/" title="Sitio Webby Awards" loading="lazy"></iframe>
+        <figcaption>Si no se muestra embebido, <a href="https://www.webbyawards.com/" target="_blank" rel="noopener">abre el sitio aquí</a>.</figcaption>
+      </figure>
+
+      <div class="analysis-text">
+        <h3>Selección</h3><p><em>(Motivo)</em></p>
+        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
+        <h3>Estructura</h3><ul><li>Arquitectura: …</li><li>Navegación: …</li></ul>
+        <h3>Visual</h3><ul><li>Paleta / Tipos</li><li>Branding</li></ul>
+        <h3>Interacción</h3><ul><li>Animaciones</li><li>Microinteracciones</li></ul>
+        <h3>Usabilidad & Accesibilidad</h3><ul><li>Claridad</li><li>AA/AAA</li></ul>
+        <h3>Técnico</h3><ul><li>Performance</li><li>SEO</li></ul>
+        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
+      </div>
+
+      <div class="screenshots">
+        <figure><img src="../assets/sow/webby1.png" alt="Home de Webby" loading="lazy" /><figcaption>Home</figcaption></figure>
+        <figure><img src="../assets/sow/webby2.png" alt="Detalle de categorías" loading="lazy" /><figcaption>Categorías</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ====== Sección 3: FWA ====== -->
+    <section id="site-fwa" class="site-block" aria-labelledby="h-fwa">
+      <header class="block-header">
+        <h2 id="h-fwa">FWA</h2>
+        <p class="meta">URL: <a href="https://thefwa.com/" target="_blank" rel="noopener">thefwa.com</a></p>
+      </header>
+
+      <figure class="iframe-wrap">
+        <iframe src="https://thefwa.com/" title="Sitio FWA" loading="lazy"></iframe>
+        <figcaption>Si el iframe está bloqueado, <a href="https://thefwa.com/" target="_blank" rel="noopener">visita thefwa.com</a>.</figcaption>
+      </figure>
+
+      <div class="analysis-text">
+        <h3>Selección</h3><p><em>(Motivo)</em></p>
+        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
+        <h3>Estructura</h3><ul><li>IA</li><li>Navegación</li></ul>
+        <h3>Visual</h3><ul><li>Color / Tipos</li><li>Branding</li></ul>
+        <h3>Interacción</h3><ul><li>Motion</li><li>Estados</li></ul>
+        <h3>Usabilidad & Accesibilidad</h3><ul><li>Tareas clave</li><li>WCAG</li></ul>
+        <h3>Técnico</h3><ul><li>Velocidad</li><li>Semántica/SEO</li></ul>
+        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
+      </div>
+
+      <div class="screenshots">
+        <figure><img src="../assets/sow/fwa1.png" alt="Listado de ganadores en FWA" loading="lazy" /><figcaption>Listado</figcaption></figure>
+        <figure><img src="../assets/sow/fwa2.png" alt="Detalle de un proyecto ganador" loading="lazy" /><figcaption>Detalle</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ====== Sección 4: CSSDA ====== -->
+    <section id="site-cssda" class="site-block" aria-labelledby="h-cssda">
+      <header class="block-header">
+        <h2 id="h-cssda">CSS Design Awards</h2>
+        <p class="meta">URL: <a href="https://www.cssdesignawards.com/" target="_blank" rel="noopener">cssdesignawards.com</a></p>
+      </header>
+
+      <figure class="iframe-wrap">
+        <iframe src="https://www.cssdesignawards.com/" title="Sitio CSS Design Awards" loading="lazy"></iframe>
+        <figcaption>Si no aparece embebido, <a href="https://www.cssdesignawards.com/" target="_blank" rel="noopener">ábrelo aquí</a>.</figcaption>
+      </figure>
+
+      <div class="analysis-text">
+        <h3>Selección</h3><p><em>(Motivo)</em></p>
+        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
+        <h3>Estructura</h3><ul><li>IA</li><li>Navegación</li></ul>
+        <h3>Visual</h3><ul><li>Color / Tipos</li><li>Branding</li></ul>
+        <h3>Interacción</h3><ul><li>Motion/UI</li><li>Microinteracciones</li></ul>
+        <h3>Usabilidad & Accesibilidad</h3><ul><li>Claridad</li><li>WCAG</li></ul>
+        <h3>Técnico</h3><ul><li>Performance</li><li>SEO</li></ul>
+        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
+      </div>
+
+      <div class="screenshots">
+        <figure><img src="../assets/sow/cssda1.png" alt="Home de CSSDA" loading="lazy" /><figcaption>Home</figcaption></figure>
+        <figure><img src="../assets/sow/cssda2.png" alt="Detalle de ficha de proyecto" loading="lazy" /><figcaption>Ficha</figcaption></figure>
+      </div>
+    </section>
+
+    <aside class="notes" aria-label="Notas para el análisis">
+      <h2>Notas y checklist</h2>
+      <ul>
+        <li>Prueba cada sitio con Lighthouse y anota resultados clave (LCP/CLS/INP).</li>
+        <li>Comprueba contraste de color (AA mínimo).</li>
+        <li>Valida semántica: estructura de headings, landmark roles.</li>
+        <li>Añade referencias o enlaces a recursos si los usas.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Web Atelier (UDIT) – Informe de análisis SOW. Hecho por <span class="by">Tu Nombre</span>.</p>
+  </footer>
 </body>
 </html>
