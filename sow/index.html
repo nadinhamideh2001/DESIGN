@@ -1,204 +1,549 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="top">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Informe de Análisis de Sitios Web Sobresalientes (SOW) – Web Atelier UDIT" />
   <title>Some Outstanding Webs – Informe SOW</title>
 
-  <!-- CSS base y específico (desde /sow subir un nivel a /assets)codigo html practica -->
+  <!-- Tipografía principal -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de estilo del proyecto -->
   <link rel="stylesheet" href="../assets/css/index.css" />
   <link rel="stylesheet" href="../assets/css/sow.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido principal</a>
 
+  <!-- Cabecera del documento -->
   <header class="site-header" role="banner">
+    <!-- Portada -->
     <section class="cover" aria-label="Portada">
-      <h1 class="title" aria-label="Some Outstanding Webs">Some Outstanding Webs</h1>
-      <p class="subtitle">Análisis de sitios premiados · Web Atelier (UDIT)</p>
+      <h1 class="title reveal" aria-label="Some Outstanding Webs">Some Outstanding Webs</h1>
+      <p class="subtitle reveal">Análisis de sitios premiados · Web Atelier (UDIT)</p>
     </section>
 
+    <!-- Navegación principal (sticky) -->
     <nav class="site-nav" aria-label="Secciones del informe">
       <ul>
-        <li><a href="#site-awwwards">Awwwards</a></li>
-        <li><a href="#site-webby">Webby Awards</a></li>
-        <li><a href="#site-fwa">FWA</a></li>
-        <li><a href="#site-cssda">CSS Design Awards</a></li>
+        <li><a href="#site-randm" data-spy>R&amp;M Studio</a></li>
+        <li><a href="#site-huggle" data-spy>Yifei Luo</a></li>
+        <li><a href="#site-mukko" data-spy>Mukko Studio</a></li>
+        <li><a href="#site-folllit" data-spy>Folllit – Works</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Contenido principal -->
   <main id="main" class="container" role="main">
-    <!-- ====== Sección 1: Awwwards ====== -->
-    <section id="site-awwwards" class="site-block" aria-labelledby="h-awwwards">
-      <header class="block-header">
-        <h2 id="h-awwwards">Awwwards</h2>
-        <p class="meta">URL: <a href="https://www.awwwards.com/" target="_blank" rel="noopener">awwwards.com</a></p>
+    <!-- Sección: R&M Studio -->
+    <section id="site-randm" class="site-block" aria-labelledby="h-randm">
+      <header class="block-header reveal">
+        <h2 id="h-randm">R&amp;M — Studio</h2>
+        <p class="meta">URL: <a href="https://r-and-m.co/studio" target="_blank" rel="noopener">r-and-m.co/studio</a></p>
       </header>
 
-      <figure class="iframe-wrap">
-        <iframe src="https://www.awwwards.com/" title="Sitio Awwwards" loading="lazy"></iframe>
-        <figcaption>Si el sitio no carga por políticas de seguridad, <a href="https://www.awwwards.com/" target="_blank" rel="noopener">ábrelo en una pestaña nueva</a>.</figcaption>
+      <!-- Vista embebida (siempre que la política del sitio lo permita) -->
+      <figure class="iframe-wrap reveal">
+        <iframe src="https://r-and-m.co/studio" title="R and M — Studio" loading="lazy" referrerpolicy="no-referrer"></iframe>
+        <figcaption>Si no se muestra, abrir: <a href="https://r-and-m.co/studio" target="_blank" rel="noopener">r-and-m.co/studio</a></figcaption>
       </figure>
 
-      <div class="analysis-text">
-        <h3>Selección</h3>
-        <p>Elegí este sitio porque <em>(motivo)</em>.</p>
+  <!-- Bloques de análisis -->
+<section class="analysis">
+  <article class="group reveal">
+    <h3>Selección</h3>
+    <p>Elegí el sitio de R&amp;M Studio porque desde el primer momento transmite una identidad clara y consistente. Me llamó la atención su enfoque minimalista basado en tipografía y contraste, dejando de lado imágenes y colores llamativos para construir una comunicación visual directa y sólida. La decisión de trabajar únicamente en blanco y negro aporta un carácter elegante y seguro, reflejando una dirección de diseño consciente.</p>
+    <p>También lo seleccioné porque demuestra cómo una web puede tener personalidad sin depender de elementos gráficos complejos. A través de decisiones tipográficas y microinteracciones bien ejecutadas, el sitio mantiene la atención del usuario y refuerza su identidad. Lo considero un buen caso para analizar cómo el diseño web puede ser expresivo usando recursos mínimos.</p>
+  </article>
 
-        <h3>Impresión inicial</h3>
-        <p><em>(sensaciones)</em></p>
+  <article class="group reveal">
+    <h3>Impresión inicial</h3>
+    <p>La primera impresión al entrar es que se trata de un estudio con cultura visual fuerte y enfoque conceptual. El cursor personalizado interactúa con los títulos generando un efecto dinámico que rompe la rigidez del layout. Además, al hacer clic en la portada aparecen palabras clave que describen áreas de trabajo del estudio, utilizando distintas tipografías para darle énfasis visual a cada concepto.</p>
+    <p>El sitio no busca explicar demasiado en un inicio; prefiere generar impacto visual y estimular la curiosidad. Esta primera interacción funciona como un filtro natural: si te interesa el estilo del estudio, continúas navegando; si no, el mensaje ya queda claro desde el principio.</p>
+  </article>
 
-        <h3>Estructura</h3>
-        <ul>
-          <li>Arquitectura de la información: <em>(jerarquía, navegación, IA)</em></li>
-          <li>Patrones de navegación: <em>(menú, búsqueda, filtros)</em></li>
-        </ul>
+  <article class="group reveal">
+    <h3>Estructura</h3>
 
-        <h3>Visual</h3>
-        <ul>
-          <li>Paleta y contraste: <em>(WCAG)</em></li>
-          <li>Tipografía y ritmo: <em>(jerarquías, legibilidad)</em></li>
-          <li>Branding: <em>(consistencia, tono)</em></li>
-        </ul>
+    <h4>Arquitectura de la información</h4>
+    <p>La arquitectura del sitio es simple y funcional, organizada en dos secciones principales: <em>Work</em> y <em>Studio</em>. Esta estructura facilita la navegación y permite comprender el contenido en pocos segundos. No existen rutas complejas ni subniveles innecesarios, lo que aporta claridad a la experiencia.</p>
 
-        <h3>Interacción</h3>
-        <ul>
-          <li>Animaciones / microinteracciones</li>
-          <li>Scroll/gestos</li>
-        </ul>
+    <h4>Navegación</h4>
+    <p>El menú superior es fijo (<em>sticky menu</em>), lo que permite acceder rápidamente a cualquier sección sin necesidad de volver al inicio. Esta decisión mejora la usabilidad del sitio, especialmente considerando que el contenido se presenta en bloques verticales.</p>
+  </article>
 
-        <h3>Usabilidad & Accesibilidad</h3>
-        <ul>
-          <li>Claridad de tareas clave</li>
-          <li>Accesibilidad: foco, alt, semántica, ARIA</li>
-        </ul>
+  <article class="group reveal">
+    <h3>Visual</h3>
 
-        <h3>Técnico</h3>
-        <ul>
-          <li>Rendimiento: Lighthouse/Core Web Vitals</li>
-          <li>SEO/semántica</li>
-        </ul>
+    <h4>Paleta y contraste</h4>
+    <p>El diseño se sostiene en una paleta estricta en blanco y negro, que refuerza un carácter sobrio y coherente. El contraste alto mejora la legibilidad y dirige la atención hacia el contenido tipográfico.</p>
 
-        <h3>Criterios de excelencia</h3>
-        <p><em>(Originalidad, utilidad, UX)</em></p>
+    <h4>Tipografía y ritmo</h4>
+    <p>La tipografía es el elemento principal del sistema visual. Se combinan <em>sans serif</em> modernas con <em>serif</em> de alto contraste para marcar jerarquías y acentos. El uso del espacio en blanco y los márgenes amplios generan un ritmo de lectura cómodo y ordenado.</p>
 
-        <h3>Conclusión</h3>
-        <p><strong>Puntos fuertes:</strong> … · <strong>Debilidades:</strong> … · <strong>Aprendizajes:</strong> …</p>
-      </div>
+    <h4>Branding</h4>
+    <p>La identidad del estudio se comunica a través de la tipografía y la composición, sin depender de imágenes. El tono editorial y la consistencia en el uso de estilos construyen una presencia de marca sobria y profesional.</p>
+  </article>
 
+  <article class="group reveal">
+    <h3>Interacción</h3>
+
+    <h4>Animaciones / microinteracciones</h4>
+    <p>Desde la portada se perciben microinteracciones que aportan personalidad: el cursor personalizado responde al movimiento y al clic, y las palabras clave aparecen con transiciones suaves (probablemente mediante <code>transform</code> y control con JavaScript). Estas animaciones refuerzan el concepto sin saturar.</p>
+
+    <h4>Scroll / gestos</h4>
+    <p>La navegación vertical es fluida y sin efectos invasivos. En el footer, las letras del nombre del estudio se desplazan y colisionan suavemente, generando movimiento sutil que aporta dinamismo sin afectar la lectura.</p>
+  </article>
+
+  <article class="group reveal">
+    <h3>Usabilidad &amp; Accesibilidad</h3>
+
+    <h4>Tareas clave</h4>
+    <p>El acceso a la información es directo: ver trabajos y conocer el estudio. La simplicidad de la estructura y el menú fijo facilitan completar estas tareas sin distracciones.</p>
+
+    <h4>Accesibilidad</h4>
+    <p>El alto contraste favorece la legibilidad. Como puntos a mejorar: el cursor personalizado no ofrece estados de enfoque claros para navegación por teclado y no se aprecian ayudas semánticas adicionales (como <code>aria-label</code>) en elementos interactivos.</p>
+  </article>
+
+  <article class="group reveal">
+    <h3>Técnico</h3>
+
+    <h4>Rendimiento</h4>
+    <p>El rendimiento es bueno al basarse principalmente en tipografía y carecer de imágenes pesadas. Las animaciones se perciben fluidas y bien optimizadas, con un uso moderado de JavaScript para controlar el cursor y las transiciones.</p>
+
+    <h4>SEO / semántica</h4>
+    <p>El marcado podría reforzarse con más etiquetas estructurales (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>). El SEO es básico pero suficiente para un portafolio: comunica identidad y contenido esencial sin capas adicionales.</p>
+  </article>
+
+  <article class="group reveal">
+    <h3>Criterios de excelencia</h3>
+    <p>Se destaca por su coherencia entre concepto y ejecución: tipografía, contraste y microinteracciones trabajan juntos para construir una experiencia clara y con carácter. La simplicidad está bien dirigida y no sacrifica claridad.</p>
+  </article>
+
+  <article class="group reveal">
+    <h3>Conclusión</h3>
+    <p>Es un sitio breve, limpio y eficaz. Comunica identidad y profesionalismo con recursos mínimos y un uso cuidado del movimiento. Puede mejorar en accesibilidad semántica, pero cumple su objetivo principal: presentar el estudio con una voz visual propia.</p>
+  </article>
+</section>
+
+
+      <!-- Galería de capturas con overlay -->
       <div class="screenshots">
-        <figure>
-          <img src="../assets/sow/awwwards1.png" alt="Home de Awwwards, hero y navegación" loading="lazy" />
-          <figcaption>Home y navegación principal</figcaption>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto1.png" alt="R&M — vista 1" loading="lazy" />
+          <figcaption>Vista 1</figcaption>
         </figure>
-        <figure>
-          <img src="../assets/sow/awwwards2.png" alt="Detalle de tarjeta de proyecto en listado" loading="lazy" />
-          <figcaption>Tarjeta de proyecto</figcaption>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto2.png" alt="R&M — vista 2" loading="lazy" />
+          <figcaption>Vista 2</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- ====== Sección 2: Webby ====== -->
-    <section id="site-webby" class="site-block" aria-labelledby="h-webby">
-      <header class="block-header">
-        <h2 id="h-webby">Webby Awards</h2>
-        <p class="meta">URL: <a href="https://www.webbyawards.com/" target="_blank" rel="noopener">webbyawards.com</a></p>
-      </header>
+   <!-- Sección: HUGGLE (Luoooif) -->
+<section id="site-huggle" class="site-block" aria-labelledby="h-huggle">
+  <header class="block-header reveal">
+    <h2 id="h-huggle">HUGGLE — Luoooif</h2>
+    <p class="meta">URL: <a href="https://luoooif.com/huggle" target="_blank" rel="noopener">luoooif.com/huggle</a></p>
+  </header>
 
-      <figure class="iframe-wrap">
-        <iframe src="https://www.webbyawards.com/" title="Sitio Webby Awards" loading="lazy"></iframe>
-        <figcaption>Si no se muestra embebido, <a href="https://www.webbyawards.com/" target="_blank" rel="noopener">abre el sitio aquí</a>.</figcaption>
-      </figure>
+  <figure class="iframe-wrap reveal">
+    <iframe src="https://luoooif.com/huggle" title="Luoooif — Huggle" loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <figcaption>Si no se muestra, abrir: <a href="https://luoooif.com/huggle" target="_blank" rel="noopener">luoooif.com/huggle</a></figcaption>
+  </figure>
 
-      <div class="analysis-text">
-        <h3>Selección</h3><p><em>(Motivo)</em></p>
-        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
-        <h3>Estructura</h3><ul><li>Arquitectura: …</li><li>Navegación: …</li></ul>
-        <h3>Visual</h3><ul><li>Paleta / Tipos</li><li>Branding</li></ul>
-        <h3>Interacción</h3><ul><li>Animaciones</li><li>Microinteracciones</li></ul>
-        <h3>Usabilidad & Accesibilidad</h3><ul><li>Claridad</li><li>AA/AAA</li></ul>
-        <h3>Técnico</h3><ul><li>Performance</li><li>SEO</li></ul>
-        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
-      </div>
+  <section class="analysis">
+    <!-- Selección -->
+    <article class="group reveal">
+      <h3>Selección</h3>
+      <p>Elegí analizar <em>HUGGLE</em> porque propone una experiencia digital de corte experimental donde la tipografía en gran formato, el movimiento y el desplazamiento construyen una narrativa visual continua. Es un sitio que prioriza el impacto y la exploración frente a la densidad informativa, lo que permite evaluar decisiones de diseño centradas en ritmo, composición y atención del usuario.</p>
+      <p>El proyecto es relevante para el análisis porque demuestra cómo, con una arquitectura mínima, se puede generar una experiencia inmersiva mediante transiciones fluidas y microinteracciones. Su enfoque se aleja del portafolio tradicional y apuesta por una comunicación más emocional, útil para estudiar aciertos estéticos y retos de usabilidad.</p>
+    </article>
+
+    <!-- Impresión inicial -->
+    <article class="group reveal">
+      <h3>Impresión inicial</h3>
+      <p>La primera impresión es de inmersión visual: el hero utiliza tipografía y bloques de contenido que reaccionan al scroll con suavidad, invitando a avanzar. El ritmo está bien medido; no abruma y mantiene la curiosidad con cambios de tamaño y peso tipográfico que guían la lectura.</p>
+      <p>Se percibe intención de dirección de arte consistente. El sitio evita elementos superfluos y confía en la composición y el movimiento. El resultado es una presentación clara, con personalidad, que introduce el concepto del proyecto sin perder cohesión.</p>
+    </article>
+
+    <!-- Estructura -->
+    <article class="group reveal">
+      <h3>Estructura</h3>
+
+      <h4>Arquitectura de la información</h4>
+      <p>La arquitectura es lineal y corta: bloques secuenciales que cuentan el proyecto a través de texto y secciones visuales. No hay ramificaciones complejas; la información avanza de forma progresiva, lo que reduce fricción y facilita completar la lectura de la página.</p>
+
+      <h4>Navegación</h4>
+      <p>La navegación principal se apoya en el scroll; el menú superior aparece cuando es necesario y mantiene acceso estable a la marca o al índice global del sitio. No hay elementos redundantes ni submenús; la orientación es clara y el usuario siempre sabe cómo continuar.</p>
+    </article>
+
+    <!-- Visual -->
+    <article class="group reveal">
+      <h3>Visual</h3>
+
+      <h4>Paleta y contraste</h4>
+      <p>Predominio de **blancos, negros y grises**, con alto contraste en titulares y llamadas. La lectura es consistente y los CTAs, cuando aparecen, mantienen suficiente diferenciación respecto al entorno. El contraste cumple niveles adecuados para texto principal y titulares.</p>
+
+      <h4>Tipografía y ritmo</h4>
+      <p>La tipografía es el recurso principal: titulares en gran formato combinados con cuerpo claro y respirado. Se alternan pesos (regular/semibold/bold) para marcar jerarquías sin saturar. El espaciado vertical y los márgenes amplios sostienen un ritmo de lectura cómodo, incluso en pantallas pequeñas.</p>
+
+      <h4>Branding</h4>
+      <p>El carácter de la pieza se apoya en una estética editorial, sobria y contemporánea. La identidad se transmite por coherencia de tono, tamaño tipográfico y uso del espacio; no depende de gráficas accesorias. El resultado es reconocible y con buen pulso visual.</p>
+    </article>
+
+    <!-- Interacción -->
+    <article class="group reveal">
+      <h3>Interacción</h3>
+
+      <h4>Animaciones / microinteracciones</h4>
+      <p>Las transiciones de entrada, cambios de opacidad y leves desplazamientos sugieren uso de <em>CSS transform</em> y control con JavaScript (posiblemente librería de animación) para sincronizar el ritmo con el scroll. Las microinteracciones refuerzan jerarquía y acompañan la lectura sin interferir.</p>
+
+      <h4>Scroll / gestos</h4>
+      <p>El desplazamiento es el eje de interacción. No hay saltos bruscos ni efectos que rompan la continuidad. La progresión de secciones favorece la comprensión del contenido y evita la fatiga visual. En móvil, la respuesta al gesto es suave y estable.</p>
+    </article>
+
+    <!-- Usabilidad & Accesibilidad -->
+    <article class="group reveal">
+      <h3>Usabilidad &amp; Accesibilidad</h3>
+
+      <h4>Tareas clave</h4>
+      <p>El objetivo principal es entender el concepto y el alcance del proyecto. La página cumple al ofrecer un relato lineal, rápido de consumir, con llamadas a seguir explorando el sitio cuando corresponde. La densidad baja de contenido ayuda a no perderse.</p>
+
+      <h4>Accesibilidad</h4>
+      <p>El contraste es adecuado y la tipografía legible. Como mejora, conviene asegurar foco visible en enlaces y botones, desactivar animaciones excesivas cuando el sistema tiene <code>prefers-reduced-motion</code> activo y revisar textos alternativos en imágenes ilustrativas para usuarios de lector de pantalla.</p>
+    </article>
+
+    <!-- Técnico -->
+    <article class="group reveal">
+      <h3>Técnico</h3>
+
+      <h4>Rendimiento</h4>
+      <p>La página carga con rapidez gracias al predominio de texto y a medios optimizados. Las animaciones se perciben fluidas; parece haber un uso moderado de JavaScript para coordinar transiciones con el scroll. No se aprecian bloqueos visuales ni saltos de maquetación relevantes.</p>
+
+      <h4>SEO / semántica</h4>
+      <p>El marcado es limpio; se podría reforzar con etiquetas estructurales (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>) y metadatos específicos por proyecto. Los títulos y subtítulos jerarquizan correctamente. El SEO es básico pero suficiente para un caso de estudio dentro de un portfolio.</p>
+    </article>
+
+    <!-- Criterios de excelencia -->
+    <article class="group reveal">
+      <h3>Criterios de excelencia</h3>
+      <p>El sitio destaca por integrar tipografía, ritmo y movimiento en una pieza coherente, con un nivel de cuidado visible en transiciones y composición. La apuesta por un relato visual breve y enfocado le da personalidad y mejora la retención del usuario.</p>
+    </article>
+
+    <!-- Conclusión -->
+    <article class="group reveal">
+      <h3>Conclusión</h3>
+      <p><em>HUGGLE</em> es una página clara, breve y bien ejecutada que comunica el proyecto desde el diseño y la interacción. Su mayor fortaleza está en la coherencia del sistema tipográfico y en el control de las animaciones. Puede reforzarse en accesibilidad (foco visible y alternativas de movimiento), pero cumple con solvencia como pieza de portfolio contemporáneo.</p>
+    </article>
+  </section>
+</section>
+
 
       <div class="screenshots">
-        <figure><img src="../assets/sow/webby1.png" alt="Home de Webby" loading="lazy" /><figcaption>Home</figcaption></figure>
-        <figure><img src="../assets/sow/webby2.png" alt="Detalle de categorías" loading="lazy" /><figcaption>Categorías</figcaption></figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto3.png" alt="HUGGLE — vista 1" loading="lazy" />
+          <figcaption>Vista 1</figcaption>
+        </figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto4.png" alt="HUGGLE — vista 2" loading="lazy" />
+          <figcaption>Vista 2</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ====== Sección 3: FWA ====== -->
-    <section id="site-fwa" class="site-block" aria-labelledby="h-fwa">
-      <header class="block-header">
-        <h2 id="h-fwa">FWA</h2>
-        <p class="meta">URL: <a href="https://thefwa.com/" target="_blank" rel="noopener">thefwa.com</a></p>
-      </header>
+  <!-- Sección: Mukko Studio -->
+<section id="site-mukko" class="site-block" aria-labelledby="h-mukko">
+  <header class="block-header reveal">
+    <h2 id="h-mukko">Mukko Studio</h2>
+    <p class="meta">URL: <a href="https://mukko.studio/index" target="_blank" rel="noopener">mukko.studio/index</a></p>
+  </header>
 
-      <figure class="iframe-wrap">
-        <iframe src="https://thefwa.com/" title="Sitio FWA" loading="lazy"></iframe>
-        <figcaption>Si el iframe está bloqueado, <a href="https://thefwa.com/" target="_blank" rel="noopener">visita thefwa.com</a>.</figcaption>
-      </figure>
+  <figure class="iframe-wrap reveal">
+    <iframe src="https://mukko.studio/index" title="Mukko Studio" loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <figcaption>Si no se muestra, abrir: <a href="https://mukko.studio/index" target="_blank" rel="noopener">mukko.studio/index</a></figcaption>
+  </figure>
 
-      <div class="analysis-text">
-        <h3>Selección</h3><p><em>(Motivo)</em></p>
-        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
-        <h3>Estructura</h3><ul><li>IA</li><li>Navegación</li></ul>
-        <h3>Visual</h3><ul><li>Color / Tipos</li><li>Branding</li></ul>
-        <h3>Interacción</h3><ul><li>Motion</li><li>Estados</li></ul>
-        <h3>Usabilidad & Accesibilidad</h3><ul><li>Tareas clave</li><li>WCAG</li></ul>
-        <h3>Técnico</h3><ul><li>Velocidad</li><li>Semántica/SEO</li></ul>
-        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
-      </div>
+  <section class="analysis">
+    <!-- Selección -->
+    <article class="group reveal">
+      <h3>Selección</h3>
+      <p>Incluí <em>Mukko Studio</em> por su enfoque claro de estudio creativo contemporáneo: una presentación ordenada, apoyada en tipografía funcional, grillas limpias y un portfolio que prioriza la lectura de proyectos sin ruido. Su lenguaje visual no es estridente; transmite profesionalismo y confianza con decisiones de diseño sobrias y consistentes.</p>
+      <p>Además, el sitio es un buen caso para analizar cómo una web de estudio puede equilibrar identidad, claridad y rendimiento. La estructura es directa, las transiciones son discretas y el contenido se jerarquiza bien, lo que permite estudiar buenas prácticas aplicables a portafolios y webs de servicios.</p>
+    </article>
+
+    <!-- Impresión inicial -->
+    <article class="group reveal">
+      <h3>Impresión inicial</h3>
+      <p>La primera sensación es de orden y legibilidad. El hero no intenta impresionar con efectos pesados; establece el tono mediante tipografía, ritmo y composición. La interfaz comunica seguridad y cuidado por el detalle, lo que predispone al usuario a explorar los trabajos con tranquilidad.</p>
+      <p>El sitio guía la entrada con una jerarquía clara de títulos y bloques: es fácil entender dónde mirar y qué hacer a continuación. La experiencia inicial es estable y sin sobresaltos, algo que beneficia al usuario cuando su objetivo es evaluar proyectos.</p>
+    </article>
+
+    <!-- Estructura -->
+    <article class="group reveal">
+      <h3>Estructura</h3>
+
+      <h4>Arquitectura de la información</h4>
+      <p>La arquitectura es simple: página principal con acceso directo a proyectos, fichas de trabajo con información esencial y una sección de estudio/servicios compacta. No hay niveles innecesarios; el contenido está organizado para entrar, ver y comprender rápidamente.</p>
+
+      <h4>Navegación</h4>
+      <p>La navegación es superior y estable. Los enlaces principales permanecen accesibles en todo momento (comportamiento de menú fijo o fácilmente alcanzable), lo que reduce pasos para cambiar de sección. La profundidad es mínima y no existen patrones que generen fricción.</p>
+    </article>
+
+    <!-- Visual -->
+    <article class="group reveal">
+      <h3>Visual</h3>
+
+      <h4>Paleta y contraste</h4>
+      <p>Predominan blancos, grises y acentos oscuros que aseguran buen contraste para titulares y cuerpo de texto. Los CTAs y enlaces mantienen legibilidad y se distinguen de manera suficiente del contenido, lo que favorece una lectura cómoda y accesible.</p>
+
+      <h4>Tipografía y ritmo</h4>
+      <p>Tipografía sans serif funcional para cuerpo y subtítulos, con pesos que marcan jerarquía sin exagerar. El interlineado y las separaciones entre bloques sostienen un ritmo fluido. La grilla mantiene coherencia entre listados y fichas, ayudando a escanear la página con rapidez.</p>
+
+      <h4>Branding</h4>
+      <p>La identidad se expresa a través de la consistencia en tipografía, espaciado y composición. No hay dependencia de recursos vistosos; el carácter de marca se construye con decisiones sobrias y profesionales, adecuadas para un estudio que prioriza mostrar el trabajo.</p>
+    </article>
+
+    <!-- Interacción -->
+    <article class="group reveal">
+      <h3>Interacción</h3>
+
+      <h4>Animaciones / microinteracciones</h4>
+      <p>Las transiciones son discretas: cambios de opacidad, desplazamientos suaves y estados de hover en tarjetas o enlaces. Se percibe control del movimiento, con animaciones que apoyan la comprensión sin distraer. Es probable el uso de transformaciones CSS y una cantidad moderada de JavaScript.</p>
+
+      <h4>Scroll / gestos</h4>
+      <p>El desplazamiento es lineal y estable; no hay efectos que rompan el flujo. La interacción táctil en móvil responde bien y mantiene la jerarquía. El comportamiento de la cabecera favorece moverse entre secciones con pocos gestos.</p>
+    </article>
+
+    <!-- Usabilidad & Accesibilidad -->
+    <article class="group reveal">
+      <h3>Usabilidad &amp; Accesibilidad</h3>
+
+      <h4>Tareas clave</h4>
+      <p>Las tareas principales (ver portfolio, abrir fichas de proyecto, localizar información del estudio o contacto) se completan con pocos pasos. La claridad de los listados y la estructura de las fichas reduce dudas y facilita una evaluación rápida de los trabajos.</p>
+
+      <h4>Accesibilidad</h4>
+      <p>La legibilidad es buena gracias al contraste y la tipografía. Como mejora, se recomienda verificar foco visible en los elementos interactivos, asegurar textos alternativos en imágenes y respetar <code>prefers-reduced-motion</code> en animaciones para usuarios sensibles al movimiento.</p>
+    </article>
+
+    <!-- Técnico -->
+    <article class="group reveal">
+      <h3>Técnico</h3>
+
+      <h4>Rendimiento</h4>
+      <p>La sensación de carga es ágil. Las imágenes parecen optimizadas y el sitio evita recursos pesados en la portada. Las animaciones se renderizan con fluidez, lo que sugiere un uso moderado de JavaScript y transformaciones CSS eficientes.</p>
+
+      <h4>SEO / semántica</h4>
+      <p>El marcado es claro; podría reforzarse con etiquetas estructurales (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>) y metadatos más específicos por proyecto para mejorar indexación. La jerarquía de títulos es coherente para la lectura y suficiente para un portafolio.</p>
+    </article>
+
+    <!-- Criterios de excelencia -->
+    <article class="group reveal">
+      <h3>Criterios de excelencia</h3>
+      <p>El sitio destaca por su consistencia y su capacidad para comunicar valor sin recurrir a efectos excesivos. Diseño, ritmo y estructura trabajan de forma alineada con el objetivo: presentar el trabajo del estudio con claridad, buen gusto y rendimiento estable.</p>
+    </article>
+
+    <!-- Conclusión -->
+    <article class="group reveal">
+      <h3>Conclusión</h3>
+      <p><em>Mukko Studio</em> es un ejemplo sólido de web de estudio: limpia, clara y profesional. Prioriza la legibilidad y la estructura por encima del espectáculo, lo que refuerza confianza y facilita la evaluación de proyectos. Con pequeños ajustes en accesibilidad semántica, alcanzaría un estándar muy alto en calidad general.</p>
+    </article>
+  </section>
+</section>
+
 
       <div class="screenshots">
-        <figure><img src="../assets/sow/fwa1.png" alt="Listado de ganadores en FWA" loading="lazy" /><figcaption>Listado</figcaption></figure>
-        <figure><img src="../assets/sow/fwa2.png" alt="Detalle de un proyecto ganador" loading="lazy" /><figcaption>Detalle</figcaption></figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto5.png" alt="Mukko — vista 1" loading="lazy" />
+          <figcaption>Vista 1</figcaption>
+        </figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto6.png" alt="Mukko — vista 2" loading="lazy" />
+          <figcaption>Vista 2</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ====== Sección 4: CSSDA ====== -->
-    <section id="site-cssda" class="site-block" aria-labelledby="h-cssda">
-      <header class="block-header">
-        <h2 id="h-cssda">CSS Design Awards</h2>
-        <p class="meta">URL: <a href="https://www.cssdesignawards.com/" target="_blank" rel="noopener">cssdesignawards.com</a></p>
-      </header>
+   <!-- Sección: Folllit — Works -->
+<section id="site-folllit" class="site-block" aria-labelledby="h-folllit">
+  <header class="block-header reveal">
+    <h2 id="h-folllit">Folllit — Works</h2>
+    <p class="meta">URL: <a href="https://www.folllit.com/works/" target="_blank" rel="noopener">folllit.com/works</a></p>
+  </header>
 
-      <figure class="iframe-wrap">
-        <iframe src="https://www.cssdesignawards.com/" title="Sitio CSS Design Awards" loading="lazy"></iframe>
-        <figcaption>Si no aparece embebido, <a href="https://www.cssdesignawards.com/" target="_blank" rel="noopener">ábrelo aquí</a>.</figcaption>
-      </figure>
+  <figure class="iframe-wrap reveal">
+    <iframe src="https://www.folllit.com/works/" title="Folllit — Works" loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <figcaption>Si no aparece embebido, abrir: <a href="https://www.folllit.com/works/" target="_blank" rel="noopener">folllit.com/works</a></figcaption>
+  </figure>
 
-      <div class="analysis-text">
-        <h3>Selección</h3><p><em>(Motivo)</em></p>
-        <h3>Impresión inicial</h3><p><em>(Sensaciones)</em></p>
-        <h3>Estructura</h3><ul><li>IA</li><li>Navegación</li></ul>
-        <h3>Visual</h3><ul><li>Color / Tipos</li><li>Branding</li></ul>
-        <h3>Interacción</h3><ul><li>Motion/UI</li><li>Microinteracciones</li></ul>
-        <h3>Usabilidad & Accesibilidad</h3><ul><li>Claridad</li><li>WCAG</li></ul>
-        <h3>Técnico</h3><ul><li>Performance</li><li>SEO</li></ul>
-        <h3>Conclusión</h3><p><strong>+ </strong>… · <strong>– </strong>… · <strong>Aprendizajes:</strong> …</p>
-      </div>
+  <section class="analysis">
+    <!-- Selección -->
+    <article class="group reveal">
+      <h3>Selección</h3>
+      <p>Incluí <em>Folllit — Works</em> por su aproximación editorial a la presentación de proyectos: listado claro, composición equilibrada y un uso de tipografía y espacio que prioriza la lectura. Es un ejemplo útil para analizar cómo un portfolio puede ser visualmente atractivo sin sacrificar orden y jerarquía.</p>
+      <p>Además, la página organiza el material con una estructura sencilla y confiable, lo que permite evaluar buenas prácticas de listado, tarjetas de proyecto e itinerario hacia fichas, manteniendo una experiencia consistente en desktop y móvil.</p>
+    </article>
+
+    <!-- Impresión inicial -->
+    <article class="group reveal">
+      <h3>Impresión inicial</h3>
+      <p>La primera impresión es de limpieza y control visual. La parrilla de trabajos se entiende de inmediato y los elementos interactivos no distraen de la tarea principal: explorar proyectos. La estética es sobria, con un tono editorial que transmite profesionalidad.</p>
+      <p>El ritmo de la home favorece el escaneo: títulos legibles, imágenes con proporción constante y aire suficiente entre tarjetas. La propuesta seduce por claridad y consistencia más que por efectos llamativos.</p>
+    </article>
+
+    <!-- Estructura -->
+    <article class="group reveal">
+      <h3>Estructura</h3>
+
+      <h4>Arquitectura</h4>
+      <p>La arquitectura es superficial y efectiva: una portada de trabajos que actúa como índice, fichas con información esencial y, en su caso, accesos al contexto del proyecto. No hay niveles innecesarios; se prioriza entrar, ver y decidir si ampliar.</p>
+
+      <h4>Navegación</h4>
+      <p>La navegación es directa y predecible. El acceso a los proyectos es claro desde el listado y el retorno a la parrilla resulta evidente. No hay menús profundos ni patrones que ralenticen el flujo. En móvil, el acceso y la vuelta mantienen la misma sencillez.</p>
+    </article>
+
+    <!-- Visual -->
+    <article class="group reveal">
+      <h3>Visual</h3>
+
+      <h4>Paleta / contraste</h4>
+      <p>Predominan blancos, negros y grises con contraste suficiente para titulares y cuerpo. Los enlaces y estados activos se diferencian con claridad del texto estático, lo que favorece la legibilidad. El sistema cromático sostiene un tono serio y coherente con el objetivo del sitio.</p>
+
+      <h4>Tipografía / ritmo</h4>
+      <p>Tipografía sans serif para cuerpo y titulares con pesos diferenciados que ordenan la jerarquía. El interlineado y el espaciado entre bloques permiten un escaneo rápido del listado. La parrilla mantiene proporciones que dan estabilidad a la lectura incluso en scroll continuo.</p>
+
+      <h4>Branding</h4>
+      <p>El carácter de marca se expresa en la precisión del sistema: tipografía consistente, espaciado controlado y uso sobrio del color. La identidad no depende de efectos; se construye con decisiones de composición y orden visual.</p>
+    </article>
+
+    <!-- Interacción -->
+    <article class="group reveal">
+      <h3>Interacción</h3>
+
+      <h4>Animaciones / microinteracciones</h4>
+      <p>Las interacciones son contenidas: hovers en tarjetas, transiciones suaves y realce discreto en enlaces. Todo está orientado a confirmar la acción del usuario sin introducir ruido. Se percibe uso de <em>CSS transform</em> y transiciones para estados.</p>
+
+      <h4>Scroll / gestos</h4>
+      <p>El desplazamiento es fluido y no se interrumpe con efectos intrusivos. El comportamiento en móvil responde bien y mantiene la jerarquía visual de las tarjetas. La interacción por gesto se limita a lo necesario.</p>
+    </article>
+
+    <!-- Usabilidad & Accesibilidad -->
+    <article class="group reveal">
+      <h3>Usabilidad &amp; Accesibilidad</h3>
+
+      <h4>Tareas clave</h4>
+      <p>Las tareas principales —explorar proyectos, abrir fichas y comprender el alcance del trabajo— se completan en pocos pasos. El listado se entiende rápido, los clics son predecibles y la navegación de vuelta no genera dudas.</p>
+
+      <h4>Accesibilidad</h4>
+      <p>El contraste de texto es adecuado. Como mejoras, conviene asegurar foco visible en enlaces y botones, proporcionar textos alternativos descriptivos en imágenes y respetar <code>prefers-reduced-motion</code> para usuarios sensibles al movimiento.</p>
+    </article>
+
+    <!-- Técnico -->
+    <article class="group reveal">
+      <h3>Técnico</h3>
+
+      <h4>Rendimiento</h4>
+      <p>La página se percibe ágil: imágenes optimizadas, pesos tipográficos controlados y animaciones ligeras. El listado no provoca saltos de maquetación significativos y el scroll se mantiene estable.</p>
+
+      <h4>SEO / semántica</h4>
+      <p>La jerarquía de títulos es clara y el marcado puede reforzarse con etiquetas estructurales (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>) en listados y fichas. Metadatos más específicos por proyecto mejorarían la indexación, aunque el nivel actual es suficiente para un portfolio.</p>
+    </article>
+
+    <!-- Criterios de excelencia -->
+    <article class="group reveal">
+      <h3>Criterios de excelencia</h3>
+      <p>El sitio destaca por su claridad y consistencia: la parrilla es legible, las fichas cumplen su función y el sistema visual refuerza la identidad sin excesos. Es un ejemplo sólido de cómo priorizar contenido y estructura sin perder atractivo.</p>
+    </article>
+
+    <!-- Conclusión -->
+    <article class="group reveal">
+      <h3>Conclusión</h3>
+      <p><em>Folllit — Works</em> ofrece una experiencia ordenada y confiable para revisar proyectos. Su fortaleza está en la organización y la legibilidad; con ajustes puntuales de accesibilidad semántica podría alcanzar un estándar aún más alto sin modificar su lenguaje visual.</p>
+    </article>
+  </section>
+</section>
+
 
       <div class="screenshots">
-        <figure><img src="../assets/sow/cssda1.png" alt="Home de CSSDA" loading="lazy" /><figcaption>Home</figcaption></figure>
-        <figure><img src="../assets/sow/cssda2.png" alt="Detalle de ficha de proyecto" loading="lazy" /><figcaption>Ficha</figcaption></figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto7.png" alt="Folllit — vista 1" loading="lazy" />
+          <figcaption>Vista 1</figcaption>
+        </figure>
+        <figure tabindex="0" class="reveal">
+          <img src="../assets/sow/foto8.png" alt="Folllit — vista 2" loading="lazy" />
+          <figcaption>Vista 2</figcaption>
+        </figure>
       </div>
     </section>
-
-    <aside class="notes" aria-label="Notas para el análisis">
-      <h2>Notas y checklist</h2>
-      <ul>
-        <li>Prueba cada sitio con Lighthouse y anota resultados clave (LCP/CLS/INP).</li>
-        <li>Comprueba contraste de color (AA mínimo).</li>
-        <li>Valida semántica: estructura de headings, landmark roles.</li>
-        <li>Añade referencias o enlaces a recursos si los usas.</li>
-      </ul>
-    </aside>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <p>© 2025 Web Atelier (UDIT) – Informe de análisis SOW. Hecho por <span class="by">Tu Nombre</span>.</p>
+  <!-- Pie de página con enlaces a los sitios analizados -->
+  <footer class="site-footer reveal" role="contentinfo">
+    <nav aria-label="Sitios analizados">
+      <ul class="footer-links">
+        <li><a href="https://r-and-m.co/studio" target="_blank" rel="noopener">R&amp;M — Studio</a></li>
+        <li><a href="https://luoooif.com/huggle" target="_blank" rel="noopener">HUGGLE — Luoooif</a></li>
+        <li><a href="https://mukko.studio/index" target="_blank" rel="noopener">Mukko Studio</a></li>
+        <li><a href="https://www.folllit.com/works/" target="_blank" rel="noopener">Folllit — Works</a></li>
+      </ul>
+    </nav>
+    <p class="credits">© 2025 Web Atelier (UDIT) — Informe SOW. Hecho por <span class="by">Nadin Hamideh</span>.</p>
   </footer>
+
+  <!-- Botón de retorno al inicio -->
+  <button id="toTop" class="to-top" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <!-- Lógica: botón subir, scrollspy y efecto de aparición -->
+  <script>
+    // Botón "Back to Top"
+    const toTop = document.getElementById('toTop');
+    const showOn = 400;
+    const onScroll = () => {
+      if (window.scrollY > showOn) toTop.classList.add('show');
+      else toTop.classList.remove('show');
+    };
+    window.addEventListener('scroll', onScroll);
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Scrollspy mediante IntersectionObserver
+    const links = Array.from(document.querySelectorAll('a[data-spy]'));
+    const map = new Map(links.map(link => [link.getAttribute('href').slice(1), link]));
+    const optsSpy = { rootMargin: '-40% 0px -50% 0px', threshold: 0.01 };
+    const ioSpy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.id;
+        const link = map.get(id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          links.forEach(l => l.classList.remove('is-active'));
+          link.classList.add('is-active');
+          history.replaceState(null, '', '#' + id);
+        }
+      });
+    }, optsSpy);
+    document.querySelectorAll('.site-block').forEach(sec => ioSpy.observe(sec));
+
+    // Aparición progresiva de elementos (reveal)
+    const revealables = document.querySelectorAll('.reveal');
+    const ioReveal = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          ioReveal.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+    revealables.forEach(el => ioReveal.observe(el));
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
